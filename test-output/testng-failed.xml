@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [sanity suite]">
+  <test thread-count="5" name="sanity test(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.saucedemo.testsuite.LoginPageTest">
+        <methods>
+          <include name="userShouldLoginSuccessfullyWithValidCredentials"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.saucedemo.testsuite.LoginPageTest -->
+    </classes>
+  </test> <!-- sanity test(failed) -->
+</suite> <!-- Failed suite [sanity suite] -->
